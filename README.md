@@ -39,6 +39,9 @@
 - <strong>1、先用BM25和Bool检索把问句query和问答库做字词上的粗排，返回topN；
 
 - <strong>2、将query和粗排得到的topN用SimBert向量化，再将两者做consine相似度计算得到最相似的top1。
+  
+
+## 交流
 
 微信公众号：卓拾书非卓师叔
 
