@@ -13,11 +13,11 @@
 ### 准备：
 环境准备：安装requirement中的依赖包
 
-下载模型，并放置在对应的路径：simbert模型
+下载模型，并放置在code/1.retrieve_match/3.simbert_match/config路径下：simbert模型：https://github.com/ZhuiyiTechnology/pretrained-models
 ### 启动：
-- <strong>启动QAserver
+- <strong>启动code/2.API_serve/KG_service.py
 
-- <strong>启动WXPY
+- <strong>启动code/3.wx_project/chat_bot.py（需要扫码登录）
 
 开始邀请朋友和你聊天吧
 
