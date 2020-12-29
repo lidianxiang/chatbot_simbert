@@ -29,14 +29,15 @@ class Server:
     def parse(self, app_data):
         request_id = app_data["request_id"]
         text = app_data["query"]
-        return request_id, text
+        type_ = app_data["type"]
+        return request_id, text, type_
 
     """ 得到服务的调用结果，包括模型结果和服务的情况 """
 
     def get_result(self, data):
         code = '200'
         try:
-            request_id, text = self.parse(data)
+            request_id, text, type_ = self.parse(data)
         except Exception as e:
             print('error info : {}'.format(e))
             code = '300'
@@ -44,7 +45,7 @@ class Server:
         try:
             if code == '200':
                 # answer, ques_type, _ = self.predict(text)
-                answer, topn_recall_sort = self.predict(text)
+                answer, topn_recall_sort = self.predict(text, type=type_)
 
             elif code == '300':
                 answer = '亲,对不起,卓师叔目前还理解不了你的问题'

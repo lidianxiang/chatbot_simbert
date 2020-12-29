@@ -62,7 +62,7 @@ class BoolSearch:
         return vector_inter
             
     """ 取出包含文档的布尔向量 """
-    def _get_vector(self,word_ids,topn=5):
+    def _get_vector(self,word_ids,topn=3):
         
         """ 返回 [] """
         if topn == 0:
