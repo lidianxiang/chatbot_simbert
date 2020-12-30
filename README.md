@@ -20,11 +20,9 @@ simbert模型：https://github.com/ZhuiyiTechnology/pretrained-models
 ### 启动：
 - <strong>启动code/2.API_serve/KG_service.py
 
-- <strong>启动code/3.wx_project/chat_bot.py（需要扫码登录）
-
-开始邀请朋友和你聊天吧
-
-如果自己有前端展示，不想通过微信来交互，可以启动QAserver，用这个API和你自己的前端做交互即可。
+- <strong>启动code/3.wx_project/chat_bot.py（需要扫码登录）  
+  开始邀请朋友和你聊天吧  
+  如果自己有前端展示，不想通过微信来交互，可以启动QAserver，用这个API和你自己的前端做交互即可。
 
 ## 实现思路
 整体工程如下，主要有三块：前端、后端、前后端交互；
